@@ -1,0 +1,390 @@
+* {
+  color: #0073C6;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url(../images/bg-lakhta.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -10;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 150px;
+  font-size: 36px;
+}
+
+header img {
+  width: 200px;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 25px;
+  background-color: #0073C6;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.mainMenu a {
+  color: #ebebeb;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 23px;
+}
+
+.mainMenu a:hover {
+  color: #0073C6;
+  background-color: #ebebeb;
+  transition: 0.4s;
+  border-radius: 25px;
+  transform: scale(1.2);
+  box-shadow: 0px 3px 20px 0px #0073C6;
+}
+
+.fastSearch {
+  display: flex;
+  width: 750px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 3px solid #0073C6;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fastSearch input {
+  width: 600px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #ebebeb;
+}
+
+.fastSearch input:focus {
+  outline: none;
+  box-shadow: inset -1px -1px 9px 1px #0073c6;
+}
+
+.fastSearch input::placeholder {
+  color: #0073C6;
+  opacity: 0.2;
+}
+
+.fastSearch button {
+  font-size: 20px;
+  width: 85px;
+  border: none;
+  background: #0073C6;
+  color: #ebebeb;
+  overflow: hidden;
+}
+
+.fastSearch .fastSearchButton {
+  border-right: 1px solid #ebebeb;
+}
+
+.fastSearch datalist option {
+  display: none;
+}
+
+.spravochnik {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 790px;
+  height: 60px;
+}
+
+.spravochnik .navSpravochnik {
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.spravochnik a {
+  margin-left: 30px;
+}
+
+.spravochnik a:hover {
+  background-color: #0073C6;
+  color: white;
+  opacity: 0.7;
+}
+
+.alphabetNav {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.alphabetNav a {
+  padding: 10px;
+  margin-left: -10px;
+}
+
+.alphabetNav a:hover {
+  background-color: #0073C6;
+  color: white;
+}
+
+.spravochnikWorkers {
+  margin-top: 30px;
+}
+
+.spravochnikWorkers .spravochnikWorkersPersonOne {
+  border-bottom: 1px solid #0073C6;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle,
+.spravochnikWorkers .spravochnikWorkersPersonOne {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle > div,
+.spravochnikWorkers .spravochnikWorkersPersonOne > div {
+  margin-bottom: 10px;
+  flex-basis: 175px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle > div:nth-child(6n+3),
+.spravochnikWorkers .spravochnikWorkersPersonOne > div:nth-child(6n+3) {
+  flex-basis: 100px;
+  text-align: center;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersFio,
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersMail,
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersFioTitle,
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersMailTitle,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersFio,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersMail,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersFioTitle,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersMailTitle {
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersFio div:first-child,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersFio div:first-child {
+  font-size: 24px;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersFio a:hover,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersFio a:hover {
+  background-color: #0073C6;
+  color: white;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersMail,
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersMailTitle,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersMail,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersMailTitle {
+  flex-basis: 325px;
+  flex-grow: 6;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersKabinet,
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersKabinetTitle,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersKabinet,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersKabinetTitle {
+  flex-basis: 170px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersOtdel,
+.spravochnikWorkers .spravochnikWorkersTitle .spravochnikWorkersOtdelTitle,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersOtdel,
+.spravochnikWorkers .spravochnikWorkersPersonOne .spravochnikWorkersOtdelTitle {
+  text-align: center;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  color: #0073C6;
+  width: 90%;
+  animation: 0.8s show ease;
+}
+
+summary {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 22px;
+  transition: 0.8s;
+  border-bottom: 2px solid;
+  user-select: none;
+}
+
+details > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+details[open] > summary {
+  box-shadow: inset 0 -10px 5px -5px #0073c6;
+}
+
+details[open] > div > a {
+  padding: 10px;
+  opacity: 0;
+  animation-name: showContent;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+details[open] > div > a:hover {
+  background-color: #0073C6;
+  color: white;
+}
+
+details[open] > div > a:focus-visible {
+  outline: -webkit-focus-ring-color #0073C6 1px;
+  outline-offset: #0073C6 1px;
+}
+
+details[open] > div {
+  animation-name: slideDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+  to {
+    opacity: 1;
+    padding: 20px;
+  }
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    width: 100px;
+  }
+  to {
+    opacity: 1;
+    width: 900px;
+  }
+}
+
+.personHeader {
+  margin-top: 40px;
+}
+
+.personFamily {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.personIO {
+  font-size: 36px;
+}
+
+.personPosition {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.breadcrumbsOtdel {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.breadcrumbsOtdel span {
+  font-size: 20px;
+}
+
+.breadcrumbsOtdel a {
+  border-radius: 20px;
+  background-color: #0073C6;
+  padding: 10px;
+  color: white;
+}
+
+.person {
+  display: flex;
+  margin-top: 30px;
+}
+
+.person div {
+  padding: 10px 0;
+  font-size: 26px;
+}
+
+.person .personData {
+  margin-left: 100px;
+}
+
+.person .personData a:hover {
+  border-bottom: 1px solid #0073C6;
+}

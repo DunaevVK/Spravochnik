@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="mainHeader">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo-rus.svg" alt="логотип" title="Справочник!"></a>
+            </div>
+            <div class="nameOtdelSit">
+                <a href="index.html" title="СИТ - Лучший отдел !">
+                    Служба Информационных Технологий</a>
+            </div>
+            <div class="menuHeader">
+                <span>МЕНЮ</span>
+            </div>
+        </div>
+        <menu class="mainMenu">
+            <a href="spravochnikWorkers.html">Справочник</a>
+            <a href="index.html">Полезное</a>
+            <a href="index.html">Заявки\тесты</a>
+            <a href="index.html">Для IT</a>
+            <a href="index.html">О нас</a>
+        </menu>
+        <form class="fastSearch" action="">
+            <input type="text" placeholder="Быстрый поиск">
+            <button class="fastSearchButton">поиск</button>
+            <button class="fastSearchButtonReset">сброс</button>
+        </form>
+
+
+    </header>
+
+    <main class="container">
+        <div class="spravochnik">
+            <h1>Телефонный справочник Компании Рога и Копыта</h1>
+            <div class="navSpravochnik">
+                <a href="spravochnikWorkers.html">Сотрудники</a>
+                <a style="border-bottom: 1px solid #0073C6;" href="#">Подразделения</a>
+            </div>
+        </div>
+        <section>
+            <details>
+                <summary>Служба Главного Энергетика</summary>
+                <div>
+                    <a href="#">Вся служба</a>
+                    <a href="#">Руководство службы</a>
+                    <a href="#">Участок N1</a>
+                    <a href="#">Участок N2</a>
+                    <a href="#">Участок N3</a>
+                </div>
+            </details>
+            <details>
+                <summary>Служба Информационных Технологий</summary>
+                <div>
+                    <a name="SIT" href="#">Вся служба</a>
+                    <a href="#">Руководство службы</a>
+                    <a name="SITUch" href=" #">Участок N1</a>
+                    <a href="#">Участок N2</a>
+                    <a href=" #">Участок N3</a>
+                </div>
+            </details>
+            <details>
+                <summary>Отдел Специальных Технологий</summary>
+                <div>
+                    <a name="OST" href="#">Вся служба</a>
+                    <a href="#">Руководство службы</a>
+                    <a href="#">Участок1</a>
+                </div>
+            </details>
+        </section>
